@@ -1,0 +1,9 @@
+DROP DATABASE IF EXISTS fp_pro;
+CREATE DATABASE IF NOT EXISTS fp_pro;
+
+CREATE TABLE docentes(
+	nif CHAR(9) NOT NULL UNIQUE,
+    nombre VARCHAR(50) NOT NULL,
+	edad TINYINT NULL,
+    PRIMARY KEY Pk_docentes_nif (nif)
+)ENGINE InnoDB;
